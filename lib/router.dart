@@ -9,7 +9,7 @@ class Router {
       case Home.ROUTE:
         return MaterialPageRoute<Home>(builder: (_) => const Home());
       case Details.ROUTE:
-        return MaterialPageRoute<Details>(builder: (_) => const Details());
+        return MaterialPageRoute<Details>(builder: (_) => Details());
       default:
         return MaterialPageRoute<dynamic>(
           builder: (_) => Scaffold(
