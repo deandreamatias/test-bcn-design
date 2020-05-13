@@ -10,7 +10,7 @@ class JourneyTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      'Index 2: School',
+      'Por aquí tampoco',
       style: Style.TEXT_TAB,
     );
   }

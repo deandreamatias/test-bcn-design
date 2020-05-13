@@ -11,7 +11,7 @@ class LibraryTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      'Index 1: Business',
+      'Nada por aquí',
       style: Style.TEXT_TAB,
     );
   }
