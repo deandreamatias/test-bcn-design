@@ -50,6 +50,8 @@ class _OpenContainerWrapper extends StatelessWidget {
           bottom: Radius.circular(12.0),
         ),
       ),
+      closedElevation: 4.0,
+      openElevation: 4.0,
       transitionType: transitionType,
       openBuilder: (BuildContext context, VoidCallback _) {
         return Details();
@@ -73,25 +75,35 @@ class CardWidget extends StatelessWidget {
       onTap: openContainer,
       child: Column(
         children: <Widget>[
-          Flexible(
+          Expanded(
             flex: 6,
-            fit: FlexFit.tight,
-            child: Image.network(
-              'https://via.placeholder.com/900x400',
+            child: Image.asset(
+              'assets/img/working.png',
               fit: BoxFit.cover,
             ),
           ),
-          Flexible(
-            flex: 4,
-            fit: FlexFit.tight,
+          Expanded(
+            flex: 5,
             child: Container(
               padding: Space.ALL_8,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: const <Widget>[
-                  Expanded(child: Text('7 day programme')),
-                  Expanded(child: Text('Working with thoughts')),
+                  Expanded(
+                    flex: 2,
+                    child: Text(
+                      '7 day programme',
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Text(
+                      'Working with thoughts',
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
                 ],
               ),
             ),

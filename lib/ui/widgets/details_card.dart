@@ -17,10 +17,11 @@ class CardDetails extends StatelessWidget {
             padding: Space.ALL_16,
             child: Text('7 day programme'),
           ),
-          Padding(
-            padding: Space.ALL_8,
+          const Padding(
+            padding: Space.HORIZONTAL_16,
             child: Text(
               'Working with thoughts',
+              textAlign: TextAlign.center,
               style: Style.TEXT_TITLE,
             ),
           ),
@@ -28,7 +29,6 @@ class CardDetails extends StatelessWidget {
             padding: Space.ALL_16,
             child: Text(
               'In this 7-day programme, we\'ll help you to write your thoughts down, identify any negative thing and lorem ipsun mas palabras por aqui para testar',
-              // textAlign: TextAlign.,
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
               style: Style.TEXT_DESCRIPTION,

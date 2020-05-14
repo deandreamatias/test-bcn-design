@@ -14,24 +14,24 @@ class Style {
   );
   static const List<BoxShadow> LOW_SHADOW = <BoxShadow>[
     BoxShadow(
-      color: ColorCustom.MEDIUM_GREY,
-      blurRadius: 16.0,
-      spreadRadius: 16.0,
+      color: ColorCustom.LOW_OPACITY_BLACK,
+      blurRadius: 4.0,
+      spreadRadius: 0,
     ),
     BoxShadow(
-      color: ColorCustom.MEDIUM_GREY,
-      blurRadius: 16.0,
-      spreadRadius: 16.0,
+      color: ColorCustom.LOW_OPACITY_BLACK,
+      blurRadius: 4.0,
+      spreadRadius: 0,
     ),
     BoxShadow(
-      color: ColorCustom.MEDIUM_GREY,
-      blurRadius: 16.0,
-      spreadRadius: 16.0,
+      color: ColorCustom.LOW_OPACITY_BLACK,
+      blurRadius: 4.0,
+      spreadRadius: 0,
     ),
     BoxShadow(
-      color: ColorCustom.MEDIUM_GREY,
-      blurRadius: 16.0,
-      spreadRadius: 16.0,
+      color: ColorCustom.LOW_OPACITY_BLACK,
+      blurRadius: 4.0,
+      spreadRadius: 0,
     ),
   ];
 }
@@ -39,7 +39,7 @@ class Style {
 class ColorCustom {
   static const Color SOFT_BLACK = Color(0xFF3E3F43);
   static const Color PURPLE = Color(0xFFD3A0ED);
-  static const Color MEDIUM_GREY = Color(0xFFEEEEEE);
+  static const Color LOW_OPACITY_BLACK = Color(0x10000000);
   static const Color LOW_GREY = Color(0xFFF3F3F5);
   static const Color BACKGROUND = Color(0xFFF9F9Fa);
 }

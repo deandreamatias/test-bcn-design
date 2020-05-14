@@ -16,8 +16,8 @@ class Details extends StatelessWidget {
           children: <Widget>[
             Expanded(
               flex: 6,
-              child: Image.network(
-                'https://via.placeholder.com/900x400',
+              child: Image.asset(
+                'assets/img/working.png',
                 fit: BoxFit.cover,
               ),
             ),
