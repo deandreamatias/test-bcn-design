@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:test_bcn_design/ui/shared/styles.dart';
+import '../shared/styles.dart';
 
 class LibraryTab extends StatelessWidget {
   const LibraryTab({
@@ -10,7 +10,7 @@ class LibraryTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       'Nada por aquí',
       style: Style.TEXT_TAB,
     );

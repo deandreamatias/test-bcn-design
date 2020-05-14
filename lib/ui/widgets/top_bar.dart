@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../shared/styles.dart';
+
 class TopBar extends StatelessWidget {
   const TopBar({
     Key key,
@@ -7,14 +9,16 @@ class TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(24.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          const Text('evermind'),
-          IconButton(icon: Icon(Icons.person), onPressed: null)
-        ],
+    return SafeArea(
+      child: Padding(
+        padding: Space.HORIZONTAL_16,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            const Text('evermind'),
+            IconButton(icon: Icon(Icons.person), onPressed: () {})
+          ],
+        ),
       ),
     );
   }

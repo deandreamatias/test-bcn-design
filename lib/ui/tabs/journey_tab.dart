@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:test_bcn_design/ui/shared/styles.dart';
+import '../shared/styles.dart';
 
 class JourneyTab extends StatelessWidget {
   const JourneyTab({
@@ -9,7 +9,7 @@ class JourneyTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       'Por aquí tampoco',
       style: Style.TEXT_TAB,
     );
